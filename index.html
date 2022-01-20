@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+
+    }
+    body{
+        background: linear-gradient(to right,rgb(255, 187, 0),rgb(255, 102, 0)
+        );
+        text-transform:capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+    header{
+        font-size: 1.5rem;
+        margin: 5rem 0rem 0rem 0rem ;
+        /* color: wheat; */
+    }
+    header,form{
+        min-height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    form input,form button{
+        padding: .5rem;
+        font-size: 2rem;
+        border: none;
+        background-color: white;
+        outline: none;
+        transition: .2s;
+    }
+    .todo-button:hover{
+        background-color: rgb(255, 196, 0) !important;
+        color: white;
+    }
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .todo-list{
+        min-width: 30%;
+        list-style: none;
+    }
+    .todo{
+        margin: .5rem;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        align-items: center;
+        /* padding: .5rem; */
+    }
+    .todo li{
+        flex-grow: 1;
+        margin-left: 1rem;
+    }
+    .trash-btn,
+    .complete-btn{
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .trash-btn{
+        background-color: rgb(4, 0, 255);
+    }
+    .completed{
+        text-decoration: line-through;
+    }
+    .active2{
+        background-color: none;
+    }
+</style>
+<body>
+    <header>
+        <h1>works to be done </h1>
+    </header>
+    <form >
+        <input type="text" class="todo-input">
+        <button class="todo-button">+</button>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list">
+            
+        </ul>
+    </div>
+    
+</body>
+<script src="todo.js"></script>
+</html> 
